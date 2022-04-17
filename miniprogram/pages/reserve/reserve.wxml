@@ -1,0 +1,17 @@
+
+<view class="share" wx:for="{{content}}" wx:key="content" wx:for-item="item" wx:for-index="index">
+  <view class="word">
+    <text>{{item.content}}</text>
+  </view>
+  <view class="img" bindtap="open">
+    <image class="picture" src="{{item.img}}"></image>
+  </view>
+</view>
+<view class="share" wx:for="{{story}}" wx:key="story" wx:for-item="item" wx:for-index="index">
+  <view class="word">
+    <text>{{item.title}}</text>
+  </view>
+  <view class="word">
+    <text user-select="true">{{item.text}}</text>
+  </view>
+</view>

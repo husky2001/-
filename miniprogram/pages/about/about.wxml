@@ -1,0 +1,12 @@
+<view>
+  <image src="https://s1.ax1x.com/2022/03/12/bHTU8s.png"></image>
+  <text user-select="true" space="{{true}}" decode="{{true}}">
+    项目名称：MDD心灵驿站
+    指导老师：徐薇老师（中南民族大学计算机科学学院）
+    成&emsp;&emsp;员：向建恩（计算机科学学院）
+    &emsp;&emsp;&emsp;&emsp;&emsp;余义琳（计算机科学学院）
+    &emsp;&emsp;&emsp;&emsp;&emsp;曾令雨（计算机科学学院）
+    &emsp;&emsp;&emsp;&emsp;&emsp;李思晗（计算机科学学院）
+    &emsp;&emsp;&emsp;&emsp;&emsp;李偲铭（经济学院）
+  </text>
+</view>

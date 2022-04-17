@@ -1,0 +1,19 @@
+<form class ="weui-cells weui-cells_form" bindsubmit="submitstory">
+				<view class="weui-cells__title">当前分区：{{server}}</view>
+<input name = "title" placeholder="请输入标题" class="title" type="text"/>
+<view class = "content">
+  <textarea placeholder="请输入内容" class="story" name="content" maxlength="400" bindinput='inputText' cols="50" rows="10"/>
+  <span class="wordWrap">{{number}}/{{maxNumber}}</span>
+</view>
+<view class="weui-form__tips-area">
+<view class = "jiange"></view>
+          <view class="weui-form__tips">
+                    发布成功之后，可在素材区查询结果
+          </view>
+        </view>
+
+        <view class="weui-form__opr-area" >
+          <button class='weui-btn weui-btn_primary' type="primary" formType="submit">提交</button>
+        </view>
+<!-- <button plain="true" type="primary">发表</button> -->
+</form>

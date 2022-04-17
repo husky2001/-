@@ -1,0 +1,28 @@
+
+	<view class="weui-cells demo_badge_cells">
+		<view class="weui-cell weui-cell_active" wx:if="{{userInfo&&userInfo.avatarUrl}}">
+				<view class="weui-cell__hd">
+					<image src="{{userInfo.avatarUrl}}"></image>
+				</view>
+				<view class="weui-cell__bd">
+					<view>{{userInfo.nickName}}</view>
+          <!-- <view class="demo_badge_desc" wx:if='{{userInfo.phone}}'>{{userInfo.phone}}</view>
+          <view class="demo_badge_desc" bindtap="navToinfo" wx:if='{{!userInfo.phone}}'>去完善个人信息</view> -->
+				</view>
+      </view>
+        <view class="weui-btn-area" wx:if="{{!userInfo || userInfo == null}}">
+           <button class="weui-btn weui-btn_primary" bindtap="onGotUserInfo" >授权登录</button>
+			</view>
+    </view>
+
+	<view wx:if="{{userInfo&&userInfo.avatarUrl}}">
+		<button bindtap="share" class="contact">我的分享</button>
+		<button bindtap="message" class="feedback">我的留言</button>
+	</view>
+
+	<button class="contact" open-type="contact">联系我们</button>
+	<button class="feedback" open-type="feedback">意见反馈</button>
+	<navigator url="../../pages/about/about">
+		<button class="about">关于我们</button>
+	</navigator>
+	<button class="out" bindtap="loginOut">退出登录</button>

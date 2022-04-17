@@ -1,0 +1,12 @@
+.liuyanban{
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+}
+page {
+  background: #F3F3F3;
+} 
+view{
+  margin-top: 20rpx;
+  background-color: white;
+}

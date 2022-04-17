@@ -1,0 +1,84 @@
+<!--
+<!-- 轮播 -->
+<view class="lunbo1">
+  <view class="lubo">
+  <view wx:if="{{topImgs.length==0}}">
+		<image src='https://s1.ax1x.com/2022/03/22/qMKrY8.jpg' style="height:340rpx;width:100%" mode='aspectFill' >
+    </image>
+		
+	</view>
+	<view wx:else>
+		<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+      <block wx:for="{{topImgs}}" wx:for-index="index" wx:key="key">
+        <swiper-item>
+          <image src='{{item.url}}' style="height:340rpx;width:100%" mode='aspectFill' >
+          </image>
+        </swiper-item>
+      </block>
+    </swiper></view>
+    
+  </view>
+</view>
+<!-- 服务项列表 -->
+<view class="weui-panel weui-panel_access">
+<view class="weui-grids">
+		<view class="weui-grid" data-name="图片" bindtap="addServer" >
+			<view class="img" >
+				<image src="/icon/addphoto.png" style='width:100rpx;height:100rpx' alt></image>
+			</view>
+			<view class="weui-grid__label">图片区</view>
+		</view>
+   
+    <view class="weui-grid" data-name="电影" bindtap="addServer">
+			<view class="img" >
+				<image src="/icon/flim.png" style='width:100rpx;height:100rpx' alt></image>
+			</view>
+			<view class="weui-grid__label">电影区</view>
+    </view>
+
+    <view class="weui-grid" data-name="短片" bindtap="addvideo" >
+			<view class="img" >
+				<image src="/icon/video.png" style='width:100rpx;height:100rpx' alt></image>
+			</view>
+			<view class="weui-grid__label">短片区</view>
+    </view>
+<!-- 新增故事 -->
+    <view class="weui-grid" data-name="故事" bindtap="addstory">
+			<view class="img" >
+				<image src="/icon/sleep.png" style='width:100rpx;height:100rpx' alt></image>
+			</view>
+			<view class="weui-grid__label">故事区</view>
+    </view>
+    
+    <view class="weui-grid" data-name="新闻" bindtap="addstory" >
+			<view class="img" >
+				<image src="/icon/24gl-newspaper2.png" style='width:100rpx;height:100rpx' alt></image>
+			</view>
+			<view class="weui-grid__label">新闻区</view>
+    </view>
+    
+    <view class="weui-grid" data-name="其他" bindtap="addServer">
+			<view class="img" >
+				<image src="/icon/other.png" style='width:100rpx;height:100rpx' alt></image>
+			</view>
+			<view class="weui-grid__label">其他</view>
+		</view>
+  </view>
+</view>
+
+  <view class="weui-panel weui-panel_access">
+			<view class="weui-panel__hd">最新通知</view>
+			<view class="weui-panel__bd" >
+				<a class="weui-media-box weui-media-box_appmsg " wx:for="{{news}}" wx:key='index'  bindtap="showNoctice" data-title='{{item.title}}' data-content='{{item.content}}'>
+					<view class="weui-media-box__hd" >
+						<image class="weui-media-box__thumb" src="{{item.img}}" alt></image>
+					</view>
+					<view class="weui-media-box__bd">
+						<h4 class="weui-media-box__title">{{item.title}}</h4>
+						<view class="weui-media-box__desc">{{item.content}}</view>
+					</view>
+				</a>
+      </view>
+      
+		</view> 
+  

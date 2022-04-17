@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index", 
+    "pages/user/user",
+    "pages/games/games",
+    "pages/reserve/reserve",
+    "pages/material/material",
+    "pages/message/message",
+    "pages/about/about",
+    "pages/myshare/myshare",
+    "pages/mymessage/mymessage",
+    "pages/add/add",
+    "pages/addstory/addstory",
+    "pages/addvideo/addvideo"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#c6f2f2",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c6f2f2",
+    "navigationBarTitleText": "心灵驿站",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/index_b.png",
+        "selectedIconPath": "icon/index_a.png"
+      },
+        {
+        "pagePath": "pages/material/material",
+        "text": "素材",
+        "iconPath": "icon/order_b.png",
+        "selectedIconPath": "icon/order_a.png"
+      },
+      {
+        "pagePath": "pages/games/games",
+        "text": "游戏",
+        "iconPath": "icon/games_b.png",
+        "selectedIconPath": "icon/games_a.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "树洞",
+        "iconPath": "icon/message_b.png",
+        "selectedIconPath": "icon/message_a.png"
+      },
+
+
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icon/mine_b.png",
+        "selectedIconPath": "icon/mine_a.png"
+      }
+    ]
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

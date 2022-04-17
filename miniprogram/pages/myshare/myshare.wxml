@@ -1,0 +1,32 @@
+<Tabs tabs = "{{tabs}}" binditemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="share" wx:for="{{content}}" wx:key="content" wx:for-item="item" wx:for-index="index">
+        <view class="word">
+          <text>{{item.content}}</text>
+        </view>
+      <view class="img" bindtap="open">
+        <image class="picture" src="{{item.img}}"></image>
+      </view>
+    </view>
+  </block>
+<block wx:if="{{tabs[1].isActive}}">
+  <view class="share" wx:for="{{video}}" wx:key="content" wx:for-item="item" wx:for-index="index">
+        <view class="word">
+          <text user-select="true">{{item.content}}</text>
+        </view>
+      <view class="word" bindtap="open">
+        <image class="video" src="{{item.img}}"></image>
+      </view>
+    </view>
+</block>
+  <block wx:if="{{tabs[2].isActive}}">
+    <view class="share" wx:for="{{story}}" wx:key="story" wx:for-item="item" wx:for-index="index">
+  <view class="word">
+    <text>{{item.title}}</text>
+  </view>
+  <view class="word">
+    <text user-select="true">{{item.text}}</text>
+  </view>
+</view>
+  </block>
+</Tabs>

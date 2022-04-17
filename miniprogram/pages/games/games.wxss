@@ -1,0 +1,9 @@
+.watermelon{
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+}
+.watermelon image{
+  width: 700rpx;
+  height: 400rpx;
+}

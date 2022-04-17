@@ -1,0 +1,11 @@
+.picture{
+  width: 200rpx;
+  height: 200rpx;
+}
+page{
+  background: gainsboro;
+}
+.share{
+  background: white;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,3 @@
+<view class="liuyanban" wx:for="{{content}}" wx:key="content" wx:for-item="item" wx:for-index="index">
+  {{item.text}}
+ </view>

@@ -1,0 +1,40 @@
+
+<form catchsubmit="submitOrder" catchreset="formReset">
+			<view class="weui-cells__title">当前分区：{{server}}</view>
+
+  <view class="weui-form__control-area">  
+			<view class="weui-cells__group weui-cells__group_form">
+
+				<view class="weui-cells weui-cells_form">
+
+
+          <view class="weui-cells weui-cells_form">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                      <view class="weui-cell__bd">
+                          <textarea class="weui-textarea" name='content' value='{{content}}' placeholder-class="weui-input__placeholder" placeholder="分享这一刻的想法" style="height: 10em" />
+                      </view>
+                      <!-- 预览图 默认隐藏 -->
+                      <view class="weui-uploader__file" wx:if="{{img}}" >
+                        <image class="weui-uploader__img" src="{{img}}" mode="aspectFill" />
+                      </view>
+                      <view class="weui-uploader__input-box">
+                        <view class="weui-uploader__input" bindtap="addImg"></view>
+                      </view>
+                 </view> 
+            </view>
+           </view>
+
+				</view>
+			</view>
+	</view>
+        <view class="weui-form__tips-area">
+          <view class="weui-form__tips">
+                    发布成功之后，可在素材区查询结果
+          </view>
+        </view>
+
+        <view class="weui-form__opr-area" >
+          <button class='weui-btn weui-btn_primary' type="primary" formType="submit">提交</button>
+        </view>
+	</form>

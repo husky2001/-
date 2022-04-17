@@ -1,0 +1,23 @@
+<form bindsubmit="onSubmit">
+    <view class="writeView">
+      <van-cell title="请留言"/>
+      <view class="textArea">
+        <textarea
+          value="{{textValue}}"
+          style="height: 10em" 
+          maxlength="{{maxNumber}}" 
+          placeholder="请输入留言内容" 
+          placeholder-style="color:gray;"
+          name="msgInput"
+          bindinput='inputText'/>
+        <span class="wordWrap">{{number}}/{{maxNumber}}</span>
+      </view>
+    </view>
+    <view class='submitBtnView'>
+      <button bindtap="onInfo" type="primary" formType="submit" plain="true">提交留言</button>
+    </view>
+  </form>
+
+ <view class="liuyanban" wx:for="{{content}}" wx:key="content" wx:for-item="item" wx:for-index="index">
+  {{item.text}}
+ </view>

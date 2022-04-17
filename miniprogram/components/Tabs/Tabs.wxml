@@ -1,0 +1,15 @@
+<view class="tabs">
+  <view class="tabs_title">
+    <!-- <view class="title_item">图片电影</view>
+    <view class="title_item">治愈短片</view>
+    <view class="title_item">新闻故事</view> -->
+    <view wx:for="{{tabs}}"
+    wx:key="id"
+    class="title_item {{item.isActive?'active':''}}"
+    bindtap="hanldeItemTap"
+    data-index="{{index}}"
+    >{{item.name}}
+    </view>
+  </view>
+  <slot></slot>
+</view>

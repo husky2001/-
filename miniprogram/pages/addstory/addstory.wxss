@@ -1,0 +1,37 @@
+/* 页面背景颜色 */
+page {
+  background: gainsboro;
+  width: 100%;
+}
+/* 故事内容样式 */
+.story{
+  margin-top: 20rpx;
+  background-color: white;
+  width: 100%;
+  height: 600rpx;
+}
+/* 标题样式 */
+.title{
+  margin-top: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding: 20rpx;
+  background: white;
+  border-radius: 16rpx;
+}
+.jiange{
+  height: 70rpx;
+}
+.content{
+    background-color:white;
+    margin: 20rpx;
+    border-radius: 16rpx;
+    box-sizing: content-box;
+    padding: 20rpx;
+    position: relative;
+}
+.wordWrap {
+  position: absolute;
+  right: 12rpx;
+  bottom: 12rpx;
+}

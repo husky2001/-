@@ -1,0 +1,9 @@
+
+.img{
+  margin:auto;
+  text-align:center;
+}
+page {
+  background: gainsboro;
+  width: 100%;
+}

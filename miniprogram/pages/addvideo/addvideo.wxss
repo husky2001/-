@@ -1,0 +1,9 @@
+/* miniprogram/pages/fb/fb.wxss */
+.page{
+  background-color: rgba(200, 198, 201, 0.527);
+}
+.pages{
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
+}
